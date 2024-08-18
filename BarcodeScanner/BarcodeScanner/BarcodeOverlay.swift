@@ -14,7 +14,8 @@ struct BarcodeOverlay: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .frame(width: UIScreen.main.bounds.width, height: 300)
+                .fill(Color.clear)
+                .frame(width: 300, height: 200)
                 .overlay(
                     Text("Scan Barcode Here")
                         .foregroundColor(.white)

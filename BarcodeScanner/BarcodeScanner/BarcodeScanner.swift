@@ -30,7 +30,7 @@ struct BarcodeScanner: View {
             
             videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession!)
             videoPreviewLayer?.videoGravity = .resizeAspectFill
-            videoPreviewLayer?.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 300)
+            videoPreviewLayer?.frame = UIScreen.main.bounds
             
             captureSession?.startRunning()
         } catch {
