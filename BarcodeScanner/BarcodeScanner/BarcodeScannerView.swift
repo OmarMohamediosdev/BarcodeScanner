@@ -12,8 +12,10 @@ struct BarcodeScannerView: View {
         VStack {
             NavigationStack {
                 VStack {
-                    Rectangle()
-                        .frame(width: .infinity, height: 300)
+//                    Rectangle()
+//                        .frame(width: .infinity, height: 300)
+                    
+                    BarcodeScanner()
                     
                     Spacer()
                         .frame(height: 60)
