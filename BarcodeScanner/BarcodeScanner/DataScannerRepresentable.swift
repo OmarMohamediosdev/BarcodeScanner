@@ -15,25 +15,6 @@ struct DataScannerRepresentable: UIViewControllerRepresentable {
     @Binding var scannedText: String
     var dataToScanFor: Set<DataScannerViewController.RecognizedDataType>
     
-    class Coordinator: NSObject, DataScannerViewControllerDelegate {
-       var parent: DataScannerRepresentable
-       
-       init(_ parent: DataScannerRepresentable) {
-           self.parent = parent
-       }
-               
-        func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
-            switch item {
-            case .text(let text):
-                parent.scannedText = text.transcript
-            case .barcode(let barcode):
-                parent.scannedText = barcode.payloadStringValue ?? "Unable to decode the scanned code"
-            default:
-                print("unexpected item")
-            }
-        }
-    }
-    
     func makeUIViewController(context: Context) -> DataScannerViewController {
         let dataScannerVC = DataScannerViewController(
             recognizedDataTypes: dataToScanFor,
@@ -60,5 +41,24 @@ struct DataScannerRepresentable: UIViewControllerRepresentable {
 
     func makeCoordinator() -> Coordinator {
        Coordinator(self)
+    }
+}
+
+class Coordinator: NSObject, DataScannerViewControllerDelegate {
+   var parent: DataScannerRepresentable
+   
+   init(_ parent: DataScannerRepresentable) {
+       self.parent = parent
+   }
+           
+    func dataScanner(_ dataScanner: DataScannerViewController, didTapOn item: RecognizedItem) {
+        switch item {
+        case .text(let text):
+            parent.scannedText = text.transcript
+        case .barcode(let barcode):
+            parent.scannedText = barcode.payloadStringValue ?? "Unable to decode the scanned code"
+        default:
+            print("unexpected item")
+        }
     }
 }
