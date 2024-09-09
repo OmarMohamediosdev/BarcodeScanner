@@ -17,7 +17,7 @@ struct BarcodeScannerView: View {
             NavigationStack {
                 VStack {
                     ScannerView()
-                        .frame(width: .infinity, height: 300)
+                        .frame(width: nil, height: 300) // .infinity returns error
                     
                     Spacer()
                         .frame(height: 60)
