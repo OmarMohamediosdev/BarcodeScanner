@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0766BAD92C72BA0F00323EA0 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766BAD82C72BA0F00323EA0 /* Scanner.swift */; };
+		0766BAD92C72BA0F00323EA0 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0766BAD82C72BA0F00323EA0 /* ScannerVC.swift */; };
 		9A8838142C71FDB0001920B9 /* BarcodeScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8838132C71FDB0001920B9 /* BarcodeScannerApp.swift */; };
 		9A8838162C71FDB0001920B9 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8838152C71FDB0001920B9 /* BarcodeScannerView.swift */; };
 		9A8838182C71FDB2001920B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8838172C71FDB2001920B9 /* Assets.xcassets */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0766BAD82C72BA0F00323EA0 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		0766BAD82C72BA0F00323EA0 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		9A8838102C71FDB0001920B9 /* BarcodeScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8838132C71FDB0001920B9 /* BarcodeScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerApp.swift; sourceTree = "<group>"; };
 		9A8838152C71FDB0001920B9 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			children = (
 				9A8838132C71FDB0001920B9 /* BarcodeScannerApp.swift */,
 				9A8838152C71FDB0001920B9 /* BarcodeScannerView.swift */,
-				0766BAD82C72BA0F00323EA0 /* Scanner.swift */,
+				0766BAD82C72BA0F00323EA0 /* ScannerVC.swift */,
 				9AA736A22C8F0B5C00BC8736 /* ScannerView.swift */,
 				9A8838172C71FDB2001920B9 /* Assets.xcassets */,
 				9A8838192C71FDB2001920B9 /* Preview Content */,
@@ -145,7 +145,7 @@
 			files = (
 				9A8838162C71FDB0001920B9 /* BarcodeScannerView.swift in Sources */,
 				9A8838142C71FDB0001920B9 /* BarcodeScannerApp.swift in Sources */,
-				0766BAD92C72BA0F00323EA0 /* Scanner.swift in Sources */,
+				0766BAD92C72BA0F00323EA0 /* ScannerVC.swift in Sources */,
 				9AA736A32C8F0B5C00BC8736 /* ScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
