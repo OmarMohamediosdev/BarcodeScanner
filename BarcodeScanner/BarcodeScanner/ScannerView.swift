@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ScannerView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> Scanner {
-        Scanner(scannerdelegate: context.coordinator)
+        ScannerVC(scannerdelegate: context.coordinator)
     }
     
     func updateUIViewController(_ uiViewController: Scanner, context: Context) {

@@ -18,7 +18,7 @@ protocol ScannerDelegate: AnyObject {
     func didSurface(error: CameraError)
 }
 
-final class Scanner: UIViewController {
+final class ScannerVC: UIViewController {
     let captureSession = AVCaptureSession()
     var previewLayer: AVCaptureVideoPreviewLayer?
     weak var scannerDelegate: ScannerDelegate?
@@ -88,7 +88,7 @@ final class Scanner: UIViewController {
     }
 }
 
-extension Scanner: AVCaptureMetadataOutputObjectsDelegate {
+extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         guard let object = metadataObjects.first else {
             scannerDelegate?.didSurface(error: .invalidScannedValue)
