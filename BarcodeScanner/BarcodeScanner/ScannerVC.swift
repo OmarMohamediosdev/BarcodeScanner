@@ -54,6 +54,7 @@ final class ScannerVC: UIViewController {
             scannerDelegate?.didSurface(error: .invalidDeviceIput)
             return
         }
+        
         let videoInput: AVCaptureDeviceInput
         
         do {
