@@ -25,6 +25,7 @@ final class ScannerVC: UIViewController {
     
     init(scannerDelegate: ScannerDelegate) {
         super.init(nibName: nil, bundle: nil)
+        
         self.scannerDelegate = scannerDelegate
     }
     
