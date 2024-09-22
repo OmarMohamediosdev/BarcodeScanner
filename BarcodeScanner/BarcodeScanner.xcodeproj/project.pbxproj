@@ -13,6 +13,8 @@
 		9A8838182C71FDB2001920B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A8838172C71FDB2001920B9 /* Assets.xcassets */; };
 		9A88381B2C71FDB2001920B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A88381A2C71FDB2001920B9 /* Preview Assets.xcassets */; };
 		9AA736A32C8F0B5C00BC8736 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA736A22C8F0B5C00BC8736 /* ScannerView.swift */; };
+		9ACF398E2CA0327500CADD5A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF398D2CA0327500CADD5A /* Alert.swift */; };
+		9ACF39922CA0455500CADD5A /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACF39912CA0455500CADD5A /* BarcodeScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		9A8838172C71FDB2001920B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A88381A2C71FDB2001920B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9AA736A22C8F0B5C00BC8736 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		9ACF398D2CA0327500CADD5A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		9ACF39912CA0455500CADD5A /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				9A8838132C71FDB0001920B9 /* BarcodeScannerApp.swift */,
-				9A8838152C71FDB0001920B9 /* BarcodeScannerView.swift */,
-				0766BAD82C72BA0F00323EA0 /* ScannerVC.swift */,
-				9AA736A22C8F0B5C00BC8736 /* ScannerView.swift */,
+				9ACF39972CA04D5F00CADD5A /* Utilities */,
+				9ACF39952CA04C7200CADD5A /* View */,
+				9ACF39932CA04BAA00CADD5A /* Screens */,
 				9A8838172C71FDB2001920B9 /* Assets.xcassets */,
 				9A8838192C71FDB2001920B9 /* Preview Content */,
 			);
@@ -71,6 +75,48 @@
 				9A88381A2C71FDB2001920B9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9ACF39932CA04BAA00CADD5A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9ACF39942CA04BC200CADD5A /* BarcodeScanner */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9ACF39942CA04BC200CADD5A /* BarcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				9A8838152C71FDB0001920B9 /* BarcodeScannerView.swift */,
+				9ACF39912CA0455500CADD5A /* BarcodeScannerViewModel.swift */,
+			);
+			path = BarcodeScanner;
+			sourceTree = "<group>";
+		};
+		9ACF39952CA04C7200CADD5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9ACF39962CA04C7E00CADD5A /* UIKitComponents */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ACF39962CA04C7E00CADD5A /* UIKitComponents */ = {
+			isa = PBXGroup;
+			children = (
+				0766BAD82C72BA0F00323EA0 /* ScannerVC.swift */,
+				9AA736A22C8F0B5C00BC8736 /* ScannerView.swift */,
+			);
+			path = UIKitComponents;
+			sourceTree = "<group>";
+		};
+		9ACF39972CA04D5F00CADD5A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9ACF398D2CA0327500CADD5A /* Alert.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACF39922CA0455500CADD5A /* BarcodeScannerViewModel.swift in Sources */,
 				9A8838162C71FDB0001920B9 /* BarcodeScannerView.swift in Sources */,
 				9A8838142C71FDB0001920B9 /* BarcodeScannerApp.swift in Sources */,
 				0766BAD92C72BA0F00323EA0 /* ScannerVC.swift in Sources */,
+				9ACF398E2CA0327500CADD5A /* Alert.swift in Sources */,
 				9AA736A32C8F0B5C00BC8736 /* ScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
